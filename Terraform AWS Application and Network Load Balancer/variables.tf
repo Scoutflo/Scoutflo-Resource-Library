@@ -155,7 +155,7 @@ variable "subnet_mapping" {
 variable "subnets" {
   description = "A list of subnet IDs to attach to the LB. Subnets cannot be updated for Load Balancers of type `network`. Changing this value for load balancers of type `network` will force a recreation of the resource"
   type        = list(string)
-  default     = null
+  default     = ["subnet-05dc8b085808f80d6", "subnet-0b75500d968a7018c"]
 }
 
 variable "xff_header_processing_mode" {

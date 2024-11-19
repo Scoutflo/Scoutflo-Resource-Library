@@ -315,3 +315,36 @@ variable "putin_khuylo" {
   type        = bool
   default     = true
 }
+
+# Variable to specify the AWS region
+variable "region" {
+  description = "The AWS region where the S3 bucket will be created."
+  type        = string
+  default     = "ap-south-1" # Set a default region, or leave it out to make it mandatory
+}
+
+# Variable for blocking public access
+variable "block_public_access" {
+  description = "Options to block public access to the S3 bucket."
+  type = object({
+    block_all                    = bool
+    block_new_acls               = bool
+    block_any_acls               = bool
+    block_public_policy          = bool
+    block_public_cross_account   = bool
+  })
+  default = {
+    block_all                    = true
+    block_new_acls               = true
+    block_any_acls               = true
+    block_public_policy          = true
+    block_public_cross_account   = true
+  }
+}
+
+# Variable for enabling/disabling bucket keys with SSE-KMS
+variable "bucket_key" {
+  description = "Enable or disable the use of bucket keys with SSE-KMS to reduce encryption costs."
+  type        = bool
+  default     = false # Default to disabled; can be overridden when using the module
+}
