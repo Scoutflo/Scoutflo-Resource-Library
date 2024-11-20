@@ -7,9 +7,6 @@
 # This module creates one or multiple Route53 zones with associated records
 # and a delegation set.
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# ------------------------------------------------------------------------------
-# Prepare locals to keep the code cleaner
 # ------------------------------------------------------------------------------
 
 locals {
