@@ -36,7 +36,7 @@ and is compatible with the terraform AWS provider v3 as well as v2.45 and above.
 - [Makefile Targets](#makefile-targets)
 - [License](#license)
 
-## Module Features
+## Module Features.........
 
 This module offers a convenient way to create Route53 zones and records.
 

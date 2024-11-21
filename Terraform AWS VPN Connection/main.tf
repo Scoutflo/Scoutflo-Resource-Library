@@ -147,7 +147,7 @@ resource "aws_ec2_transit_gateway_route_table_propagation" "default" {
   transit_gateway_route_table_id = var.transit_gateway_route_table_id
 }
 
-# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_transit_gateway_route
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_transit_gateway_route....
 resource "aws_ec2_transit_gateway_route" "default" {
   for_each = local.transit_gateway_enabled && var.transit_gateway_route_table_id != null ? var.transit_gateway_routes : {}
 

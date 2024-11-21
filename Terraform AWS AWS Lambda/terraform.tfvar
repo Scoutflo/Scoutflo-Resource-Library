@@ -1,5 +1,0 @@
-function_name = "my-test-lambda"
-runtime       = "python3.8"
-handler       = "lambda_function.lambda_handler" # Adjust according to your code structure
-filename      = "path/to/your/lambda_function.zip" # Path to your zip file
-role_name     = "my_lambda_role" # Replace with your IAM role name
