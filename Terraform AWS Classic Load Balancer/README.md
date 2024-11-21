@@ -27,8 +27,8 @@ The ECS load balancer consists of:
 
 ![Diagram of infrastructure managed by this module](https://raw.githubusercontent.com/infrablocks/terraform-aws-classic-load-balancer/main/docs/architecture.png)
 
-Usage
 -----
+Usage
 
 To use the module, include something like the following in your Terraform
 configuration:
